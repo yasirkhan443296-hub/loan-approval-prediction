@@ -5,7 +5,7 @@ import pickle
 st.title("Loan Approval Prediction")
 
 try:
-    model = pickle.load(open("model.pkl", "rb"))
+    model = pickle.load(open("model(2).pkl", "rb"))
     columns = pickle.load(open("columns.pkl", "rb"))
 
     st.success("Model Loaded Successfully")
