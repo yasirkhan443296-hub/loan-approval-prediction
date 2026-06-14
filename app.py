@@ -38,10 +38,8 @@ st.markdown("""
 # Load model
 @st.cache_resource
 def load_model():
-    with open('model.pkl', 'rb') as file:
-        return pickle.load(file)
-
-model = load_model()
+  model = pickle.load(open("model.pkl", "rb"))
+  columns = pickle.load(open("columns.pkl", "rb"))
 
 # Title
 st.title("🏦 Loan Approval Prediction")
