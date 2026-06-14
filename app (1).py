@@ -12,6 +12,6 @@ try:
     st.write("Number of features:", len(columns))
     st.write(columns)
 
- except Exception as e:
-                       st.error(e)
+except Exception as e:
+    st.error(e)
                         
